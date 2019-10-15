@@ -7,17 +7,17 @@
 
 #if canImport(UIKit)
 import UIKit
-public typealias NSUIColor = UIColor
+public typealias Color = UIColor
 #endif
 
 #if canImport(AppKit)
 import AppKit
-public typealias NSUIColor = NSColor
+public typealias Color = NSColor
 #endif
 
-extension NSUIColor {
+extension Color {
     @available(iOS, introduced: 8.0, obsoleted: 13.0)
     @available(tvOS, introduced: 9.0, obsoleted: 13.0)
     @available(macOS, introduced: 10.11, obsoleted: 10.14)
-    static var label: NSUIColor { .black }
+    static var label: Color { .black }
 }
